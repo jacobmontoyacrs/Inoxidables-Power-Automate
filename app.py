@@ -6,10 +6,10 @@ import os
 app = Flask(__name__)
 
 @app.route('/sendLead', methods=['POST'])
-def send_lead():
+def add_lead():
     incoming = request.get_json()
 
-    # Extraer los campos requeridos
+    # Extraer todos los campos esperados
     nombre = incoming.get("nombre")
     telefono = incoming.get("telefono")
     email = incoming.get("email")
