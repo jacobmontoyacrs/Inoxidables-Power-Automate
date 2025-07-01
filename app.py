@@ -14,8 +14,7 @@ def send_lead():
     telefono = incoming.get("telefono")
     email = incoming.get("email")
     producto_interes = incoming.get("productoInteres")
-    direccion = incoming.get("direccion")
-    correo_agente = incoming.get("correoAgente")
+    sucursal = incoming.get("sucursal")
     resumen = incoming.get("resumen")
 
     # Validación básica del campo obligatorio
@@ -35,8 +34,7 @@ def send_lead():
         "telefono": telefono,
         "email": email,
         "productoInteres": producto_interes,
-        "direccion": direccion,
-        "correoAgente": correo_agente,
+        "sucursal": sucursal,
         "resumen": resumen
     }
 
