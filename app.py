@@ -9,7 +9,7 @@ app = Flask(__name__)
 def add_lead():
     incoming = request.get_json()
 
-     print("Payload recibido:", incoming, flush=True)
+    print("Payload recibido:", incoming, flush=True)
 
     # Extraer todos los campos esperados
     nombre = incoming.get("nombre")
